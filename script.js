@@ -1,3 +1,13 @@
+document.addEventListener('keypress', function(e) {
+    if(e.key === "Enter") {
+      const btn = document.getElementById('but')
+      btn.click()
+      e.preventDefault() //Parar o evento.
+    }
+  })
+  
+  //________________________________________________________________________________
+
 function idade() {
     const dataNasc = window.document.getElementById('txtnasc')
     if (dataNasc.value == '') {
